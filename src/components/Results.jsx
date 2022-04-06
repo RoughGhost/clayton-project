@@ -8,7 +8,7 @@ const Results = () => {
   const location = useLocation();
   useEffect(() => {
     if (searchTerm) {
-      getResults(`${location.pathname}/q=${searchTerm}&num=40`);
+      getResults(`${location.pathname}/q=${searchTerm}&num=50`);
     }
   }, [searchTerm, location.pathname]);
   if (isLoading) return <Loading />;
